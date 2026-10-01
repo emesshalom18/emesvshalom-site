@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Rabbonim Letters on EMES VSHALOM</title>
-		<link>https://www.emesvshalom.com/rabbonim-letters/</link>
+		<link>https://emesshalom18.github.io/emesvshalom-site/rabbonim-letters/</link>
 		<description>Recent content in Rabbonim Letters on EMES VSHALOM</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,6 +10,6 @@
 		
 		
 		
-			<atom:link href="https://www.emesvshalom.com/rabbonim-letters/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://emesshalom18.github.io/emesvshalom-site/rabbonim-letters/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>

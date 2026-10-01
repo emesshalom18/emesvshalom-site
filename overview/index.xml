@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Overview on EMES VSHALOM</title>
-		<link>https://www.emesvshalom.com/overview/</link>
+		<link>https://emesshalom18.github.io/emesvshalom-site/overview/</link>
 		<description>Recent content in Overview on EMES VSHALOM</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,19 +10,19 @@
 		
 		
 		
-			<atom:link href="https://www.emesvshalom.com/overview/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://emesshalom18.github.io/emesvshalom-site/overview/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>A brief history of the Ort case</title>
-				<link>https://www.emesvshalom.com/overview/brief-history/</link>
+				<link>https://emesshalom18.github.io/emesvshalom-site/overview/brief-history/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://www.emesvshalom.com/overview/brief-history/</guid>
+				<guid>https://emesshalom18.github.io/emesvshalom-site/overview/brief-history/</guid>
 				<description>&lt;p&gt;Mrs. Ort filed for divorce in New Jersey state court. According to the&#xA;authors of this site, she did so without the permission of a Beis Din;&#xA;R&amp;rsquo; Avraham was not consulted by the rav she spoke to regarding the monetary&#xA;issues. A letter signed by three Lakewood Roshei Yeshiva and Rav Dovid&#xA;Feinstein did not reverse the filing.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;June 2000.&lt;/strong&gt; R&amp;rsquo; Avraham moved back into the family home to attempt a&#xA;reconciliation, remaining for fourteen months. During this time he consented&#xA;to the release of over $300,000 from the couple&amp;rsquo;s joint account. All accounts&#xA;had been frozen at filing, as is usual, to prevent dissipation of assets&#xA;before settlement.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Why this site exists</title>
-				<link>https://www.emesvshalom.com/overview/why-this-site/</link>
+				<link>https://emesshalom18.github.io/emesvshalom-site/overview/why-this-site/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://www.emesvshalom.com/overview/why-this-site/</guid>
+				<guid>https://emesshalom18.github.io/emesvshalom-site/overview/why-this-site/</guid>
 				<description>&lt;p&gt;This site was created to provide information. It has been said that because&#xA;R&amp;rsquo; Avraham Ort left his family penniless, Mrs. Ort was forced to turn to the&#xA;secular courts. This site presents the other side of the story — documentation&#xA;that, according to its authors, shows Mrs. Ort received millions of dollars in&#xA;liquid assets over the years, in addition to real estate, while R&amp;rsquo; Avraham was&#xA;left with the child-support obligations.&lt;/p&gt;</description>
 			</item>
 	</channel>
