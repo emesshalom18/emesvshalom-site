@@ -1,9 +1,258 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Evidence Archive | EMES VSHALOM</title><meta name=description content="Stable storage and metadata for checks, scans, letters, property documents, court documents, and tables."><link rel=stylesheet href=/css/site.css></head><body><header class=site-header><a class=brand href=/>EMES VSHALOM</a><nav class=site-nav aria-label="Main navigation"><a href=/overview/>Overview</a>
-<a href=/contents/>Contents</a>
-<a href=/financial-overview/>Financial Overview</a>
-<a href=/evidence-archive/>Evidence Archive</a>
-<a href=/people-and-issues/>People and Issues</a>
-<a href=/rabbonim-letters/>Rabbonim Letters</a>
-<a href=/day-to-day-support/>Day-to-Day Support</a>
-<a href=/updates/>Updates</a></nav></header><main class=site-main><section class=content><header class=page-header><p class=eyebrow>Section</p><h1>Evidence Archive</h1><p class=dek>Stable storage and metadata for checks, scans, letters, property documents, court documents, and tables.</p></header><p>Evidence files are stored under <code>static/evidence/...</code> so published URLs remain stable. Original files should not be overwritten. Display and thumbnail copies may be added beside originals when needed for readability.</p><h2 id=current-catalog>Current Catalog</h2><div class=table-wrap><table><thead><tr><th>Evidence</th><th>Date</th><th>Category</th><th>Amount</th><th>Quality</th><th>Links</th></tr></thead><tbody><tr id=check-undated-139258-example><td><strong>Check for $139,258.00</strong><p>Pilot catalog item only. Date, source, and interpretation need manual review against the original scan.</p></td><td>Unknown</td><td>checks</td><td>$139,258.00</td><td><span class=status>usable</span></td><td><a href=/evidence/checks/unknown/undated/display/check-139258-example.jpg>Display</a>
-<a href=/evidence/checks/unknown/undated/original/check-139258-example.jpg>Original</a></td></tr></tbody></table></div><h2 id=metadata-format-proposal>Metadata Format Proposal</h2><p>Use <code>data/evidence.yml</code> as the central, diff-friendly evidence catalog. Narrative pages keep their own front matter, while evidence records stay in structured data.</p><p>Required fields:</p><ul><li><code>id</code></li><li><code>title</code></li><li><code>date</code></li><li><code>source_category</code></li><li><code>source_name</code></li><li><code>related_pages</code></li><li><code>amount</code></li><li><code>quality_status</code></li><li><code>transcription</code></li><li><code>original_path</code></li><li><code>display_path</code></li><li><code>notes</code></li></ul><p>Recommended quality labels:</p><ul><li><code>good</code></li><li><code>usable</code></li><li><code>poor</code></li><li><code>unrecoverable</code></li></ul><p>Recommended path convention for checks:</p><p><code>static/evidence/checks/&lt;source>/&lt;yyyy-mm-dd>/&lt;original|display|thumb>/&lt;files></code></p><p>If the source or date is unknown, use a conservative placeholder such as <code>unknown/undated</code> and update the metadata later after manual review.</p></section></main><footer class=site-footer><p>Draft Hugo reorganization scaffold. Original evidence remains preserved; catalog records link to stable static paths.</p></footer></body></html>
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evidence Archive | EMES VSHALOM</title>
+    <meta name="description" content="Stable storage and metadata for checks, scans, letters, property documents, court documents, and tables.">
+    <link rel="stylesheet" href="/css/site.css">
+  </head>
+  <body>
+    <header class="site-header">
+  <a class="brand" href="/">EMES VSHALOM</a>
+  <nav class="site-nav" aria-label="Main navigation">
+    
+      <a href="/overview/">Overview</a>
+    
+      <a href="/contents/">Contents</a>
+    
+      <a href="/financial-overview/">Financial Overview</a>
+    
+      <a href="/evidence-archive/">Evidence Archive</a>
+    
+      <a href="/people-and-issues/">People and Issues</a>
+    
+      <a href="/rabbonim-letters/">Rabbonim Letters</a>
+    
+      <a href="/day-to-day-support/">Day-to-Day Support</a>
+    
+      <a href="/updates/">Updates</a>
+    
+  </nav>
+</header>
+
+    <main class="site-main">
+      
+  <section class="content">
+    <header class="page-header">
+      <p class="eyebrow">Section</p>
+      <h1>Evidence Archive</h1>
+      <p class="dek">Stable storage and metadata for checks, scans, letters, property documents, court documents, and tables.</p>
+    </header>
+    <p>Evidence files live under <code>static/evidence/&lt;category&gt;/&lt;source&gt;/&lt;date&gt;/</code>,
+with <code>original/</code>, <code>display/</code>, and <code>thumb/</code> copies side by side. Originals are
+never overwritten; display copies are resized for the web. Every item below
+records its source, date (or why the date is unknown), a transcription of
+what the document shows, and an honest quality label.</p>
+<h2 id="current-catalog">Current Catalog</h2>
+<p>10 pilot items. Each row links to the display and original scans.</p>
+
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Evidence</th>
+          <th>Date</th>
+          <th>Category</th>
+          <th>Amount</th>
+          <th>Quality</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr id="check-139258">
+            <td>
+              <strong>Check #1057 for $139,258.00 to Manya Ort</strong>
+              <p>The previous site presented this as proof of payment in full of claims to date. The handwritten note is a conditional acceptance (&#39;if that&#39;s not acceptable, don&#39;t deposit&#39;), so the legal effect is a matter for the underlying dispute, not something this scan alone settles.</p>
+            </td>
+            <td>2010-02-16</td>
+            <td>checks</td>
+            <td>$139,258.00</td>
+            <td><span class="status">usable</span></td>
+            <td>
+              <a href="/evidence/checks/ort-real-estate-account/2010-02-16/display/check-139258.jpg">Display</a>
+              <a href="/evidence/checks/ort-real-estate-account/2010-02-16/original/check-139258.jpg">Original</a>
+            </td>
+          </tr>
+        
+          <tr id="smith-barney-check-35097">
+            <td>
+              <strong>Smith Barney check for $35,097.00 to Monya Ort</strong>
+              <p>One of a series of support-payment checks in the day-to-day archive. The file&#39;s upload-batch prefix (&#39;2000_&#39;) is not the check date; the date is read from the check itself.</p>
+            </td>
+            <td>2005-12-19</td>
+            <td>checks</td>
+            <td>$35,097.00</td>
+            <td><span class="status">good</span></td>
+            <td>
+              <a href="/evidence/checks/smith-barney/2005-12-19/display/check-35097.jpg">Display</a>
+              <a href="/evidence/checks/smith-barney/2005-12-19/original/check-35097.jpg">Original</a>
+            </td>
+          </tr>
+        
+          <tr id="citigroup-check-1100">
+            <td>
+              <strong>Citigroup/Smith Barney check for $1,100.00 to Manya Ort</strong>
+              <p>Filed under the previous site&#39;s day-to-day support section. Address shown matches the Lakewood house at the center of the property dispute.</p>
+            </td>
+            <td>2006-09-29</td>
+            <td>checks</td>
+            <td>$1,100.00</td>
+            <td><span class="status">usable</span></td>
+            <td>
+              <a href="/evidence/checks/smith-barney/2006-09-29/display/check-1100.jpg">Display</a>
+              <a href="/evidence/checks/smith-barney/2006-09-29/original/check-1100.jpg">Original</a>
+            </td>
+          </tr>
+        
+          <tr id="seward-park-stock-cert-3556">
+            <td>
+              <strong>Seward Park Housing Corporation stock certificate #3556 (22.75 shares)</strong>
+              <p>Documents Mrs. Ort&#39;s holding in the Manhattan co-op (Unit E504, 415 Grand Street) before its court-ordered transfer and sale.</p>
+            </td>
+            <td>2006-09-25</td>
+            <td>property</td>
+            <td>Not specified</td>
+            <td><span class="status">good</span></td>
+            <td>
+              <a href="/evidence/property/seward-park-coop/2006-09-25/display/stock-cert-3556.png">Display</a>
+              <a href="/evidence/property/seward-park-coop/2006-09-25/original/stock-cert-3556.png">Original</a>
+            </td>
+          </tr>
+        
+          <tr id="coop-closing-statement-2013">
+            <td>
+              <strong>Attorney letter on the co-op closing (Unit E504, 415 Grand Street)</strong>
+              <p>This letter reconciles the financial overview&#39;s co-op row: the $299,212 figure is the adjusted net after closing debits ($299,212.04), not the $445,308.52 gross sale price. Net proceeds to Mrs. Ort after the further arbitration and renovation payments were $239,664.25.</p>
+            </td>
+            <td>2013-01-15</td>
+            <td>property</td>
+            <td>$445,308.52</td>
+            <td><span class="status">good</span></td>
+            <td>
+              <a href="/evidence/property/seward-park-coop/2013-01-15/display/closing-letter-2013-01-15.jpg">Display</a>
+              <a href="/evidence/property/seward-park-coop/2013-01-15/original/closing-letter-2013-01-15.jpg">Original</a>
+            </td>
+          </tr>
+        
+          <tr id="adler-transfer-authorization-2000">
+            <td>
+              <strong>Handwritten authorization to wire $350,000 to Israel</strong>
+              <p>The previous site presents this as the authorization for the $350,000 transfer from Mrs. Ort Sr.&#39;s account that, combined with $250,000 already in Israel, became the $600,000 at issue in the Adler matter. Date is one month before the February 2000 divorce filing, per the case timeline.</p>
+            </td>
+            <td>2000-01-04</td>
+            <td>court</td>
+            <td>$350,000.00</td>
+            <td><span class="status">good</span></td>
+            <td>
+              <a href="/evidence/court/adler-matter/2000-01-04/display/transfer-authorization-2000-01-04.jpg">Display</a>
+              <a href="/evidence/court/adler-matter/2000-01-04/original/transfer-authorization-2000-01-04.jpg">Original</a>
+            </td>
+          </tr>
+        
+          <tr id="ort-deposition-excerpt-600k">
+            <td>
+              <strong>Deposition excerpt: Mrs. Manya Ort on the $600,000</strong>
+              <p>The scan is a photograph of a printed excerpt page (slight angle); the Q&amp;A is readable. The deposition date is not visible in this excerpt. The recipient &#39;yeshiva&#39; is unnamed in the excerpt.</p>
+            </td>
+            <td>Unknown</td>
+            <td>court</td>
+            <td>$600,000.00</td>
+            <td><span class="status">usable</span></td>
+            <td>
+              <a href="/evidence/court/adler-matter/undated/display/deposition-excerpt-600k.jpg">Display</a>
+              <a href="/evidence/court/adler-matter/undated/original/deposition-excerpt-600k.jpg">Original</a>
+            </td>
+          </tr>
+        
+          <tr id="siruv-baltimore-bais-din">
+            <td>
+              <strong>Ksiv siruv of the Baltimore Bais Din regarding Mrs. Manya Ort</strong>
+              <p>Civil date (June 2002) is inferred from the document&#39;s Hebrew date (אסרו חג השבועות תשס״ב). The three signatures are partially legible; names are not transcribed here to avoid misreading handwriting.</p>
+            </td>
+            <td>2002-06</td>
+            <td>letters</td>
+            <td>Not specified</td>
+            <td><span class="status">good</span></td>
+            <td>
+              <a href="/evidence/letters/baltimore-bais-din/2002-06/display/ksav-siruv.jpg">Display</a>
+              <a href="/evidence/letters/baltimore-bais-din/2002-06/original/ksav-siruv.jpg">Original</a>
+            </td>
+          </tr>
+        
+          <tr id="siruv-yeshiva-beth-joseph">
+            <td>
+              <strong>Siruv of the Rabbinical Court of Yeshiva Beth Joseph regarding Mrs. Manya Ort</strong>
+              <p>Date is not legible in this scan. A better copy is needed before this item can be dated or fully transcribed.</p>
+            </td>
+            <td>Unknown</td>
+            <td>letters</td>
+            <td>Not specified</td>
+            <td><span class="status">usable</span></td>
+            <td>
+              <a href="/evidence/letters/yeshiva-beth-joseph/undated/display/siruv.jpg">Display</a>
+              <a href="/evidence/letters/yeshiva-beth-joseph/undated/original/siruv.jpg">Original</a>
+            </td>
+          </tr>
+        
+          <tr id="ikul-baltimore-bais-din-2008">
+            <td>
+              <strong>Beis din ikul (restraining order) on the Lakewood house sale</strong>
+              <p>Civil date (August 3, 2008) is inferred from the Hebrew date (ב׳ מנחם־אב תשס״ח). This is the order the previous site cites in connection with the sale of the Lakewood house.</p>
+            </td>
+            <td>2008-08-03</td>
+            <td>letters</td>
+            <td>Not specified</td>
+            <td><span class="status">good</span></td>
+            <td>
+              <a href="/evidence/letters/baltimore-bais-din/2008-08-03/display/ikul-lakewood-house.jpg">Display</a>
+              <a href="/evidence/letters/baltimore-bais-din/2008-08-03/original/ikul-lakewood-house.jpg">Original</a>
+            </td>
+          </tr>
+        
+      </tbody>
+    </table>
+  </div>
+
+
+
+<h2 id="metadata-format-proposal">Metadata Format Proposal</h2>
+<p>Use <code>data/evidence.yml</code> as the central, diff-friendly evidence catalog. Narrative pages keep their own front matter, while evidence records stay in structured data.</p>
+<p>Required fields:</p>
+<ul>
+<li><code>id</code></li>
+<li><code>title</code></li>
+<li><code>date</code></li>
+<li><code>source_category</code></li>
+<li><code>source_name</code></li>
+<li><code>related_pages</code></li>
+<li><code>amount</code></li>
+<li><code>quality_status</code></li>
+<li><code>transcription</code></li>
+<li><code>original_path</code></li>
+<li><code>display_path</code></li>
+<li><code>notes</code></li>
+</ul>
+<p>Recommended quality labels:</p>
+<ul>
+<li><code>good</code></li>
+<li><code>usable</code></li>
+<li><code>poor</code></li>
+<li><code>unrecoverable</code></li>
+</ul>
+<p>Recommended path convention for checks:</p>
+<p><code>static/evidence/checks/&lt;source&gt;/&lt;yyyy-mm-dd&gt;/&lt;original|display|thumb&gt;/&lt;files&gt;</code></p>
+<p>If the source or date is unknown, use a conservative placeholder such as <code>unknown/undated</code> and update the metadata later after manual review.</p>
+
+    
+  </section>
+
+    </main>
+    <footer class="site-footer">
+  <p>Draft Hugo reorganization scaffold. Original evidence remains preserved; catalog records link to stable static paths.</p>
+</footer>
+
+  </body>
+</html>
