@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Evidence Archive | EMES VSHALOM</title>
-    <meta name="description" content="Stable storage and metadata for checks, scans, letters, property documents, court documents, and tables.">
+    <meta name="description" content="The full catalog of checks, letters, property documents, and court documents, each with its date, transcription, and quality label.">
     <link rel="stylesheet" href="/emesvshalom-site/css/site.css">
   </head>
   <body>
@@ -37,15 +37,13 @@
     <header class="page-header">
       <p class="eyebrow">Section</p>
       <h1>Evidence Archive</h1>
-      <p class="dek">Stable storage and metadata for checks, scans, letters, property documents, court documents, and tables.</p>
+      <p class="dek">The full catalog of checks, letters, property documents, and court documents, each with its date, transcription, and quality label.</p>
     </header>
-    <p>Evidence files live under <code>static/evidence/&lt;category&gt;/&lt;source&gt;/&lt;date&gt;/</code>,
-with <code>original/</code>, <code>display/</code>, and <code>thumb/</code> copies side by side. Originals are
-never overwritten; display copies are resized for the web. Every item below
-records its source, date (or why the date is unknown), a transcription of
-what the document shows, and an honest quality label.</p>
-<h2 id="current-catalog">Current Catalog</h2>
-<p>154 items. Each row links to the display and original scans.</p>
+    <p>Every item below records its source, its date (or why the date is unknown),
+a transcription of what the document shows, and an honest quality label.
+Each row links to the scan.</p>
+<h2 id="the-catalog">The catalog</h2>
+<p>154 items.</p>
 <h3 id="checks">Checks</h3>
 
 
@@ -2452,40 +2450,14 @@ what the document shows, and an honest quality label.</p>
 
 
 
-<h2 id="metadata-format-proposal">Metadata Format Proposal</h2>
-<p>Use <code>data/evidence.yml</code> as the central, diff-friendly evidence catalog. Narrative pages keep their own front matter, while evidence records stay in structured data.</p>
-<p>Required fields:</p>
-<ul>
-<li><code>id</code></li>
-<li><code>title</code></li>
-<li><code>date</code></li>
-<li><code>source_category</code></li>
-<li><code>source_name</code></li>
-<li><code>related_pages</code></li>
-<li><code>amount</code></li>
-<li><code>quality_status</code></li>
-<li><code>transcription</code></li>
-<li><code>original_path</code></li>
-<li><code>display_path</code></li>
-<li><code>notes</code></li>
-</ul>
-<p>Recommended quality labels:</p>
-<ul>
-<li><code>good</code></li>
-<li><code>usable</code></li>
-<li><code>poor</code></li>
-<li><code>unrecoverable</code></li>
-</ul>
-<p>Recommended path convention for checks:</p>
-<p><code>static/evidence/checks/&lt;source&gt;/&lt;yyyy-mm-dd&gt;/&lt;original|display|thumb&gt;/&lt;files&gt;</code></p>
-<p>If the source or date is unknown, use a conservative placeholder such as <code>unknown/undated</code> and update the metadata later after manual review.</p>
 
     
   </section>
 
     </main>
     <footer class="site-footer">
-  <p>Draft Hugo reorganization scaffold. Original evidence remains preserved; catalog records link to stable static paths.</p>
+  <p>Every claim on this site links to the document behind it. Scans are
+  presented as cataloged, with dates and quality labels.</p>
 </footer>
 
   </body>
