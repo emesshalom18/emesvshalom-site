@@ -87,6 +87,16 @@
     <loc>https://emesshalom18.github.io/emesvshalom-site/people-and-issues/daughters-custodial-accounts/</loc>
   </url><url>
     <loc>https://emesshalom18.github.io/emesvshalom-site/day-to-day-support/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://emesshalom18.github.io/emesvshalom-site/day-to-day-support/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="he"
+                href="https://emesshalom18.github.io/emesvshalom-site/he/day-to-day-support/"
+                />
   </url><url>
     <loc>https://emesshalom18.github.io/emesvshalom-site/people-and-issues/brodericks/dear-friend/</loc>
   </url><url>
@@ -201,6 +211,16 @@
                 />
   </url><url>
     <loc>https://emesshalom18.github.io/emesvshalom-site/people-and-issues/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://emesshalom18.github.io/emesvshalom-site/people-and-issues/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="he"
+                href="https://emesshalom18.github.io/emesvshalom-site/he/people-and-issues/"
+                />
   </url><url>
     <loc>https://emesshalom18.github.io/emesvshalom-site/rabbonim-letters/rav-dovid-feinstein-5762/</loc>
   </url><url>
@@ -215,6 +235,16 @@
     <loc>https://emesshalom18.github.io/emesvshalom-site/people-and-issues/steinbergs/</loc>
   </url><url>
     <loc>https://emesshalom18.github.io/emesvshalom-site/rabbonim-letters/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://emesshalom18.github.io/emesvshalom-site/rabbonim-letters/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="he"
+                href="https://emesshalom18.github.io/emesvshalom-site/he/rabbonim-letters/"
+                />
   </url><url>
     <loc>https://emesshalom18.github.io/emesvshalom-site/rabbonim-letters/rav-moshe-shternbuch-5769/</loc>
   </url><url>
@@ -287,6 +317,16 @@
     <loc>https://emesshalom18.github.io/emesvshalom-site/rabbonim-letters/siruv-miriam-ort-hirsch-5763/</loc>
   </url><url>
     <loc>https://emesshalom18.github.io/emesvshalom-site/updates/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://emesshalom18.github.io/emesvshalom-site/updates/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="he"
+                href="https://emesshalom18.github.io/emesvshalom-site/he/updates/"
+                />
   </url><url>
     <loc>https://emesshalom18.github.io/emesvshalom-site/updates/what-would-you-do-with-a-check-like-that/</loc>
   </url><url>
