@@ -178,3 +178,45 @@ td a {
     justify-content: flex-start;
   }
 }
+
+/* ---- Hebrew (RTL) language support ---- */
+html[dir="rtl"] body {
+  font-family: "Frank Ruhl Libre", Georgia, "Times New Roman", serif;
+}
+
+/* Keep numbers, amounts and dates left-to-right inside RTL text */
+.ltr, bdi {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+html[dir="rtl"] table {
+  direction: rtl;
+}
+
+html[dir="rtl"] th,
+html[dir="rtl"] td {
+  text-align: right;
+}
+
+html[dir="rtl"] td .ltr,
+html[dir="rtl"] th .ltr {
+  display: inline-block;
+}
+
+/* Language switcher in the header */
+.lang-switch {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.lang-switch a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 4px 10px;
+}
