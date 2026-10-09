@@ -251,6 +251,10 @@ td a {
     border-inline-start: 1px solid var(--line);
   }
 
+  .table-wrap table.ev-noamt tr {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .table-wrap td.ev-date[data-label]::before,
   .table-wrap td.ev-cat[data-label]::before,
   .table-wrap td.ev-amt[data-label]::before,
@@ -263,6 +267,10 @@ td a {
 @media (max-width: 360px) {
   .table-wrap tr {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .table-wrap table.ev-noamt tr {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .table-wrap td.ev-amt {
