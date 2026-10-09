@@ -159,6 +159,10 @@ td a {
   width: 128px;
 }
 
+.table-wrap td.ev-thumb a + a {
+  margin-top: 10px;
+}
+
 .ev-thumb a {
   display: flex;
   align-items: center;
